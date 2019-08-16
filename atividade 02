@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<stdlib.h>
+main()
+{
+float sx,alt,maior,menor,num,i, alt2, qt=100;
+for(i=0;i<100;i++){
+printf("Digite: 0 - Feminino ou 1 - Masculino\n ");
+scanf("%f",&sx);
+printf("Informe a altura da pessoa\n");
+scanf("%f",&alt);
+if(i==1){
+maior=alt;
+menor=alt;
+alt2=alt2+alt2;
+}
+else if(alt>maior)
+{
+maior=alt;
+}
+else if(alt<menor)
+{
+menor=alt;
+}
+}
+if(sx==0){
+alt=alt+alt;
+}
+else if(sx==1)
+{
+sx=sx+sx;
+}
+printf("Media de altura de Mulheres é: %.0f", alt);
+printf("Media de altura dos Homens é: %.0f", alt2);
+printf("\nQuantidade homens é: %.0f", sx);
+printf("\n Maior Altura %.0f\n", maior);
+printf("A altura media de geral: %f", alt+alt2/qt);
+
+return 0;
+}
