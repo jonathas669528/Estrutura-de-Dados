@@ -1,0 +1,24 @@
+#include <stdio.h>
+#define imposto 7.31;
+
+int main(void) {
+  float b=2.50, b1=2, p1=b*b1;
+  float u=6.50, u1=6, p2=u*u1;
+  float p=10.22, pe1=10, p3=p*pe1, st=p1+p2+p3;
+  float im=imposto;
+  float total=st+imposto;
+  printf("Produto\tPreco Unitário\tQuantidade\tPreço Total");
+  printf("\n");
+  printf("Banana\t\t\t%.2f\t\t\t%.0f\tR$\t%.2f", b, b1,p1);
+  printf("\n");
+  printf("Uva\t\t\t\t%.2f\t\t\t%.0f\tR$\t%.2f", u, u1,p2);
+  printf("\n");
+  printf("Pessego\t\t\t%.2f\t\t\t%.0f\tR$\t%.2f", p, pe1,p3);
+  printf("\n");
+  printf("\t\t\t\t\t\t Sub-Total\tR$ %.2f", st);
+  printf("\n");
+  printf("\t\t\tImposto(5%%)\t\t\t\tR$\t%.2f", im);
+  printf("\n");
+  printf("\t\t\t\t\t\t Total\t\tR$ %.2f", total);
+
+}
