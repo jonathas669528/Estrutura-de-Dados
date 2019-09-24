@@ -1,0 +1,18 @@
+O código faz um calculo que soma o valor dado por ele mesmo menos um, até que o valor chegue a zero: 
+Dei o valor 3:
+O programa vai somar 3+2+1=6.
+
+#include <stdio.h>
+
+int main(void){
+int i, x;
+int soma=0;
+scanf("%d", &x);
+if (x == 0){
+  return 0;
+}else{
+for(i=x;i>0;i--){
+soma+=i;
+}printf("%d", soma);}
+return 0;
+}
