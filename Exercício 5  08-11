@@ -1,0 +1,39 @@
+# Estrutura-de-Dados
+#include <stdio.h>
+
+#include <stdlib.h>
+
+
+int procurar(int vetor[], int in, int f, int valor){
+
+    while(in<=f){
+     int meio;
+     
+     meio = (in + f) / 2;
+
+if(vetor[meio] == valor){
+
+            return meio;
+}else if(vetor[meio] < valor){
+
+            return procurar(vetor, meio + 1, f, valor);
+
+        }else{
+
+            return procurar(vetor, in, meio-1, valor);}
+            }
+
+    return -1;
+}
+
+
+int main(){
+    int vetor[11] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int x, valor;
+printf("Digite o valor a ser procurado: ");
+scanf("%d", &x);
+printf("Valor: %d", procurar(vetor, 0, 9, x));
+
+return 0;
+
+}
